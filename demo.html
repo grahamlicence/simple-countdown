@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Countdown demo</title>
+		<style type="text/css">			
+			.countdown {
+				background: #cecece;
+				color: #3c3a3a;
+				padding: 10px;
+			}
+			.countdown .title {
+				font-size: 0.5em;
+				display: block;
+				text-align: center;
+			}
+			.countdown .val {
+				display: inline-block;
+				margin: 0 0 0 -3px;
+			}
+			.countdown .day,
+			.countdown .hrs,
+			.countdown .min,
+			.countdown .sec {
+				font-size: 2em;
+				display: block;
+				min-width: 32px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="countdown" data-end="February 6, 2014 19:30">
+			<div class="time">
+				<span class="val">
+					<span class="day"></span>
+					<span class="title">DAYS</span>
+				</span>
+				<span class="val">
+					<span class="hrs"></span>
+					<span class="title">HRS</span>
+				</span>
+				<span class="val">
+					<span class="min"></span>
+					<span class="title">MINS</span>
+				</span>
+				<span class="val">
+					<span class="sec"></span>
+					<span class="title">SECS</span>
+				</span>
+			</div>
+		</div>
+		<script src="countdown.js"></script>
+	</body>
+</html>
